@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #141414;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wj-pivotgrid {
+  height: 600px !important;
+  width: 1200px !important;
+  border: 1px solid #333 !important;
+  background: #333 !important;
+}
+
+/* PivotPanel Styles */
+
+.wj-pivotpanel {
+  min-height: 0 !important;
+  height: 450px !important;
+  width: 650px !important;
+  margin: 0px 10px 0px 0px !important;
+  display: block !important;
+  background: #333 !important;
+  color: white !important;
+  padding: 10px !important;
+  padding-right: 20px !important;
+}
+
+.wj-pivotpanel .wj-flexgrid {
+  min-height: 4em !important;
+  max-height: 310px !important;
+  background: inherit !important;
+  color: white !important;
+}
+
+.wj-pivotpanel .root {
+  display: -ms-grid !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 25%) !important;
+  height: 100% !important;
+}
+
+.wj-pivotpanel .field-list-label {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 2 !important;
+  grid-column: 1/span 2 !important;
+  -ms-grid-row: 1 !important;
+  grid-row: 1 !important;
+}
+
+.wj-pivotpanel .field-list {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 2 !important;
+  grid-column: 1/span 2 !important;
+  -ms-grid-row: 2 !important;
+  -ms-grid-row-span: 2 !important;
+  grid-row: 2/span 2 !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  margin-top: 5px !important;
+  height: 363px !important;
+}
+
+.wj-pivotpanel .drag-areas-label {
+  -ms-grid-column: 3 !important;
+  -ms-grid-column-span: 2 !important;
+  grid-column: 3/span 2 !important;
+  -ms-grid-row: 1 !important;
+  grid-row: 1 !important;
+}
+
+.wj-pivotpanel .filter-list {
+  -ms-grid-column: 3 !important;
+  grid-column: 3 !important;
+  -ms-grid-row: 2 !important;
+  grid-row: 2 !important;
+  height: 95% !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  margin: 5px !important;
+}
+
+.wj-pivotpanel .column-list {
+  -ms-grid-column: 4 !important;
+  grid-column: 4 !important;
+  -ms-grid-row: 2 !important;
+  grid-row: 2 !important;
+  height: 95% !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  margin: 5px !important;
+  margin-left: 10px !important;
+}
+
+.wj-pivotpanel .row-list {
+  -ms-grid-column: 3 !important;
+  grid-column: 3 !important;
+  -ms-grid-row: 3 !important;
+  grid-row: 3 !important;
+  height: 95% !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  margin: 5px !important;
+}
+
+.wj-pivotpanel .values-list {
+  -ms-grid-column: 4 !important;
+  grid-column: 4 !important;
+  -ms-grid-row: 3 !important;
+  grid-row: 3 !important;
+  height: 95% !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  margin: 5px !important;
+  margin-left: 10px !important;
+}
+
+.wj-pivotpanel .progress-bar {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 4 !important;
+  grid-column: 1/span 4 !important;
+  -ms-grid-row: 4 !important;
+  grid-row: 4 !important;
+  width: 0px !important;
+  height: 3px !important;
+}
+
+.wj-pivotpanel .control-area {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 4 !important;
+  grid-column: 1/span 4 !important;
+  -ms-grid-row: 4 !important;
+  grid-row: 4 !important;
+  display: -ms-grid !important;
+  display: grid !important;
+  -webkit-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: end !important;
+  -ms-grid-columns: 1fr auto !important;
+  grid-template-columns: 1fr auto !important;
+}
+
+.wj-pivotpanel .control-area button {
+  -ms-grid-column: 2 !important;
+  grid-column: 2 !important;
+  align-self: end !important;
+  -ms-grid-column-align: end !important;
+  margin-top: 3px;
+  margin-right: -10px !important;
+}
+
+.wj-pivotpanel .pad {
+  padding: 6px !important;
+}
+
+.wj-pivotpanel .values-list .wj-flexgrid {
+  height: 118px !important;
+}
+
+.wj-pivotpanel .filter-list .wj-flexgrid {
+  height: 118px !important;
+}
+
+.wj-pivotpanel .column-list .wj-flexgrid {
+  height: 118px !important;
+}
+
+.wj-pivotpanel .row-list .wj-flexgrid {
+  height: 118px !important;
+}
+
+.wj-control a.wj-btn, .wj-viewer .wj-control a.wj-applybutton, .wj-control button.wj-btn:not(.wj-btn-default), .wj-viewer .wj-control button.wj-applybutton:not(.wj-btn-default) {
+  border: 1px solid rgb(66, 66, 66) !important;
+  border-style: solid !important;
+  color: white !important;
+  background-color: #3f51b5 !important;
+}
+
+.wj-control a.wj-btn:hover, .wj-viewer .wj-control a.wj-applybutton:hover, .wj-control button.wj-btn:not(.wj-btn-default):hover, .wj-viewer .wj-control button.wj-applybutton:not(.wj-btn-default):hover {
+  border: 1px solid rgb(66, 66, 66) !important;
+  border-style: solid !important;
+  color: white !important;
+  background-color: #5d6fd4 !important;
+}
+
+/* PivotGrid Styles */
+
+.wj-cell {
+  background: #333 !important;
+  color: white !important;
+}
+
+.wj-cell.wj-header {
+  background: #595959 !important;
+  color: white !important;
+}
+
+.wj-cell.wj-aggregate {
+  background: #595959 !important;
+  color: white !important;
+}
+
+.wj-cell.wj-align-right.wj-aggregate {
+  background: #595959 !important;
+}
